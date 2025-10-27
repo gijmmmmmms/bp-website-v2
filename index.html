@@ -31,6 +31,12 @@
 
     <main>
         <section class="hero">
+            <div class="hero-video-bg">
+                <!-- Здесь будет видео -->
+                <video autoplay muted loop playsinline>
+                    <source src="media/video.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="hero-container">
                 <div class="hero-grid">
                     <div class="hero-content">
@@ -41,25 +47,6 @@
                             Полный цикл IT-услуг с гарантией результата.
                         </p>
                         <a class="primary-cta" href="#commercial">Получить предложение</a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="hero-stat-card">
-                            <div class="hero-stat-number">25с</div>
-                            <div class="hero-stat-label">Среднее время<br>ответа специалиста</div>
-                        </div>
-                        <div class="hero-stat-card">
-                            <div class="hero-stat-number">90%</div>
-                            <div class="hero-stat-label">Задач решается<br>за 15 минут</div>
-                        </div>
-                        <div class="hero-stat-card">
-                            <div class="hero-stat-number">24/7</div>
-                            <div class="hero-stat-label">Круглосуточная<br>поддержка</div>
-                        </div>
-                        <div class="hero-stat-card">
-                            <div class="hero-stat-number">SLA</div>
-                            <div class="hero-stat-label">Финансовая<br>ответственность</div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -131,28 +118,33 @@
                                 <div class="benefit-icon">→</div>
                                 <div class="benefit-text">
                                     <h5>Фокус на бизнесе</h5>
-                                    <p>Освободите время и ресурсы, чтобы заниматься тем, что действительно приносит доход — развитием вашей компании.</p>
+                                    <p>Освободите время и ресурсы, чтобы заниматься тем, что действительно приносит
+                                        доход — развитием вашей компании.</p>
                                 </div>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">₽</div>
                                 <div class="benefit-text">
                                     <h5>Предсказуемый бюджет</h5>
-                                    <p>Фиксированная стоимость услуг вместо непредвиденных расходов на ремонт, зарплаты и больничные.</p>
+                                    <p>Фиксированная стоимость услуг вместо непредвиденных расходов на ремонт, зарплаты
+                                        и больничные.</p>
                                 </div>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">★</div>
                                 <div class="benefit-text">
                                     <h5>Команда экспертов в один клик</h5>
-                                    <p>Вам больше не нужно искать одного универсального специалиста. В вашем распоряжении — целая команда с знаниями в области сетей, безопасности, серверов и облачных технологий.</p>
+                                    <p>Вам больше не нужно искать одного универсального специалиста. В вашем
+                                        распоряжении — целая команда с знаниями в области сетей, безопасности, серверов
+                                        и облачных технологий.</p>
                                 </div>
                             </div>
                             <div class="benefit-item">
                                 <div class="benefit-icon">⚡</div>
                                 <div class="benefit-text">
                                     <h5>Скорость и качество</h5>
-                                    <p>Быстрое решение проблем и проактивная работа по их недопущению. Мы ценим ваше время./p>
+                                    <p>Быстрое решение проблем и проактивная работа по их недопущению. Мы ценим ваше
+                                        время./p>
                                 </div>
                             </div>
                         </div>
@@ -240,3 +232,14 @@
             </div>
             <div class="footer-bottom">
                 © 2025 Бизнес Плюс. Все права защищены
+
+                <script>
+                    window.addEventListener('scroll', function () {
+                        const header = document.querySelector('.site-header');
+                        if (window.scrollY > 50) {
+                            header.classList.add('scrolled');
+                        } else {
+                            header.classList.remove('scrolled');
+                        }
+                    });
+                </script>
